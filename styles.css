@@ -92,3 +92,28 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 40px 0; }
         margin-bottom: 20px;
     }
 }
+
+.contact-me {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #0077b5;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #004a71;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contact-me {
+        justify-content: center;
+    }
+}
