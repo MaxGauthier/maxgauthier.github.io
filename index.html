@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ton Nom | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="intro-section">
+        <div class="header-flex">
+            <div class="intro-text">
+                <h1>Maxime Gauthier</h1>
+                <p class="bio">
+                    Hi, I am a 2nd year undergradture Computer Science student at Université de Montréal driven by a deep curiosity for how technology shapes our world and how I can play my role into it. 
+                    I'm iterested in Computer Vision and its applications to resolve concrete solutions for societal challenges. Beyond the screen, my background 
+                    in competitive baseball has forged a disciplined, team-oriented and hardwork mindset that I bring to every project. In my past time, I enjoying generating and consuming digital arts and play boardgames (I'm actually pretty good at catan).
+                </p>
+            </div>
+            <div class="profile-photo">
+                <img src="photoperso.png" alt="Portrait de [Ton Nom]">
+            </div>
+        </div>
+    </header>
+
+    <hr>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="timeline-item">
+            <h3>B.Sc. in Computer Science <i></i>(honors program)</h3>
+            <p><strong>Université de Montréal</strong> | 2024 - Present</p>
+            <p>GPA : 3.9  | Recipient of:</p>
+            <ul>
+                <li><i>DIRO Professors and Alumni Excellence Scholarship</i></li>
+                <li><i>Entrance Scholarship (Academic Excellence)</i></li>
+                <li><i>Undergraduate Academic Excellence Scholarship</i></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projets">
+        <h2>Personal Projects</h2>
+        <div class="grid">
+            <div class="project-card">
+                <h3>VeloxQuiz &nbsp;&nbsp; <span class="date"><i>December 2025 - Ongoing</i></span></h3>
+                <p>
+                    VeloxQuiz is an automated assessment platform designed to reduce teacher workload by 
+                    streamlining quiz creation, evaluation, and overall academic management.
+                </p>
+                <ul>
+                    <li>VeloxQuiz extracts data from PowerPoint files using <b>python-pptx</b>, anonymizes it with <b>Microsoft Presidio</b>, and generates quizzes using the <b>Google Gemini API</b>.</li>
+                    <li>Grades quizzes via an automated scoring system created with <b>OpenCV</b> image recognition for mobile camera-based response analysis.</li>
+                    <li>All integrated into a unified application built with <b>Flutter, FastAPI, and PostgreSQL</b>.</li>
+                </ul>
+
+                <div class="tags"><span>OpenCV</span><span>Flutter</span><span>FastAPI</span><span>PostgresSQL</span>| <span>python</span> <span>dart</span></div>
+                <br>
+                <a href="#">See Demo</a>
+            </div>
+            <div class="project-card">
+                <h3>ElementBattle &nbsp;&nbsp; <span class="date"><i>August 2025 - September 2025</i></span></h3>
+                <p>
+                    ElementBattle is a 2D physics mini-simulation featuring natural elements clashing with unique powers.
+                </p>
+                <ul>
+                    <li>Physics-based object simulation (gravity, collisions, energy, motion, etc.) developed using <b>Pygame</b>.</li>
+                    <li>A project designed to master <b>Object-Oriented Programming (OOP)</b> principles and introduction to <b>computer graphics</b>.</li>
+                </ul>
+
+                <div class="tags"><span>Pygame</span>| <span>Python</span></div>
+                <br>
+                <a href="#">See Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="timeline-item">
+            <h3>Web developement intern &nbsp;&nbsp; <span class="date"><i>May 2025 - August 2025</i></span></h3>
+            <p><strong>Promutuel Insurance</strong> | May 2025 - August 2025</p>
+            <p>Built modular Drupal components, using twig, php, javascript and secured web applications through Azure AD SSO and GCP integrations. Deployed containerized apps with Docker and Acquia while collaborating in Agile environments on Linux/WSL.</p>
+        </div>
+    </section>
+
+    <section id="demos">
+        <h2>🎥 Démos en Action</h2>
+        <p>Voici quelques aperçus vidéo de mes projets les plus marquants :</p>
+        <div class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ID_DE_TA_VIDEO" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 - [Ton Nom] - Construit avec passion sur GitHub.</p>
+    </footer>
+</div>
+
+</body>
+</html>

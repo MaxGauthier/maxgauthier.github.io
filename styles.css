@@ -1,0 +1,94 @@
+:root {
+    --primary: #2563eb;
+    --text-main: #334155;
+    --text-light: #64748b;
+    --bg: #ffffff;
+    --border: #e2e8f0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    line-height: 1.7;
+    background-color: var(--bg);
+    margin: 0;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section { margin-bottom: 60px; }
+
+h1 { font-size: 2.5rem; color: #0f172a; margin-bottom: 10px; }
+h2 { font-size: 1.5rem; border-left: 4px solid var(--primary); padding-left: 15px; margin-bottom: 30px; }
+
+.bio { font-size: 1.2rem; color: var(--text-light); }
+
+.project-card, .timeline-item {
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.tags span {
+    background: #eff6ff;
+    color: var(--primary);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-right: 8px;
+}
+
+.video-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    background: #000;
+}
+
+iframe { display: block; }
+
+hr { border: 0; border-top: 1px solid var(--border); margin: 40px 0; }
+
+.date { font-style: italic; color:var(--text-light); }
+
+.header-flex {
+    display: flex;
+    align-items: center; /* Aligne verticalement l'image et le texte */
+    gap: 40px;           /* Espace entre le texte et l'image */
+    margin-top: 20px;
+}
+
+.intro-text {
+    flex: 2;             /* Le texte prend 2/3 de l'espace */
+}
+
+.profile-photo {
+    flex: 1;             /* L'image prend 1/3 de l'espace */
+    display: flex;
+    justify-content: center;
+}
+
+.profile-photo img {
+    width: 100%;         /* L'image s'adapte à son conteneur */
+    max-width: 250px;    /* Limite la taille de l'image pour qu'elle reste "petite" */
+    height: auto;        /* Garde les proportions */
+    border-radius: 10px; /* Optionnel : arrondit un peu les coins pour le style */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optionnel : ajoute une légère ombre */
+}
+
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .profile-photo img {
+        max-width: 180px; 
+        margin-bottom: 20px;
+    }
+}
