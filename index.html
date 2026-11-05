@@ -8,17 +8,28 @@
 </head>
 <body>
 
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="#" class="nav-name">Maxime Gauthier</a>
+        <div class="nav-links">
+            <a href="#education">Education</a>
+            <a href="#research">Research</a>
+            <a href="#academic">Academic Experience</a>
+            <a href="#projets">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#extracurricular">Extracurricular</a>
+        </div>
+    </div>
+</nav>
+
 <div class="container">
     <header class="intro-section">
         <div class="header-flex">
             <div class="intro-text">
                 <h1>Maxime Gauthier</h1>
                 <p class="bio">
-                    Hi, I am a 2nd year undergraduate Computer Science student at Université de Montréal driven by a deep curiosity for how technology shapes our world and how I can play my role into it. 
-                    I'm interested in Computer Vision, machine learning in general and their applications to resolve concrete solutions for societal challenges. Beyond the screen, my background 
-                    in competitive baseball has forged a disciplined, team-oriented and hardworking mindset that I bring to every project.
+                    I am an undergraduate Computer Science student at Université de Montréal. My interests are in AI for human augmentation, reliable AI and trustworthy AI, so that its evolution goes in a direction that benefits people.
                 </p>
-                <p class="bio">In my spare time, I enjoy watching sports, play games, watch animes and create digital art.</p>
             </div>
             <div class="profile-photo">
                 <img src="photoperso.png" alt="Portrait de Maxime Gauthier">
@@ -38,8 +49,9 @@
         <div class="timeline-item">
             <h3>B.Sc. in Computer Science <i>(honors program)</i></h3>
             <p><strong>Université de Montréal</strong> | 2024 - Present</p>
-            <p>GPA : 3.95  | Recipient of:</p>
+            <p>GPA : 4.04 / 4.3  | Recipient of:</p>
             <ul>
+                <li><i>NSERC Undergraduate Student Research Award (USRA / BRPC), Summer 2026</i></li>
                 <li><i>DIRO Professors and Alumni Excellence Scholarship</i></li>
                 <li><i>Entrance Scholarship (Academic Excellence)</i></li>
                 <li><i>Undergraduate Academic Excellence Scholarship</i></li>
@@ -47,56 +59,70 @@
         </div>
     </section>
 
+    <section id="research">
+        <h2>Research</h2>
+        <div class="timeline-item">
+            <h3>AI2HI: A Memory System for Artificial Intelligence Agents Modeling User Competence &nbsp;&nbsp; <span class="date"><i>August 2026</i></span></h3>
+            <p><strong>Maxime Gauthier</strong> | Undergraduate research project, supervised by Prof. Bang Liu, Université de Montréal</p>
+            <p>
+                A memory module for AI agents that infers the user's mastery of each concept from their conversations and uses it before each response to decide how much scaffolding to give, so the agent treats a novice and an expert differently.
+            </p>
+            <ul>
+                <li>Mechanisms grounded in the cognitive science of learning (zone of proximal development, Dreyfus skill levels, expertise reversal effect).</li>
+                <li>On profiles from novice to expert, the adaptive policy picks the right scaffolding level for every profile, which no fixed policy does.</li>
+            </ul>
+            <div class="tags"><span>LLM agents</span><span>Knowledge tracing</span><span>SQLite</span>| <span>python</span></div>
+            <br>
+            <a href="https://github.com/MaxGauthier/AI2HI-Memory-System/blob/main/AI2HI_Memory_System_EN.pdf" target="_blank">Read Paper</a>
+            <a href="https://github.com/MaxGauthier/AI2HI-Memory-System" target="_blank">See Code</a>
+        </div>
+        <div class="timeline-item">
+            <h3>From Artifact to Assessment: A Survey of Countermeasures to Generative AI for Academic Integrity in Higher Education &nbsp;&nbsp; <span class="date"><i>October 2026</i></span></h3>
+            <p><strong>Maxime Gauthier</strong> | ACM Computing Surveys format, not peer-reviewed (yet), supervised by Prof. Esma Aïmeur</p>
+            <p>
+                A PRISMA-ScR scoping review of 617 studies on countermeasures to AI-enabled academic misconduct, reframing the problem as one of assessment validity: detecting AI authorship does not establish what a student knows.
+            </p>
+            <ul>
+                <li>A taxonomy classifying countermeasures by their target: the artifact, the generator, the writing process, the setting, the task or the norms.</li>
+                <li>Shows that the most rigorously evaluated countermeasures verify authenticity rather than competence; one leading detector drops from over 90% detection in its authors' evaluation to 58% in an independent one.</li>
+            </ul>
+            <div class="tags"><span>Scoping review</span><span>Generative AI</span><span>Assessment</span></div>
+        </div>
+    </section>
+
+    <section id="academic">
+        <h2>Academic Experience</h2>
+        <div class="timeline-item">
+            <h3>Teaching Assistant, IFT3335 Introduction to Artificial Intelligence &nbsp;&nbsp; <span class="date"><i>September 2026 - December 2026</i></span></h3>
+            <p><strong>Université de Montréal</strong></p>
+            <p>Led tutorial sessions and graded assignments for the undergraduate introduction to AI course.</p>
+            <div class="tags"><span>Search algorithms</span>| <span>python</span></div>
+        </div>
+        <div class="timeline-item">
+            <h3>Undergraduate Research Intern, supervised by Prof. Bang Liu &nbsp;&nbsp; <span class="date"><i>Summer 2026</i></span></h3>
+            <p><strong>Université de Montréal</strong> | Funded by an NSERC Undergraduate Student Research Award</p>
+            <p>Designed, built and evaluated AI2HI, a memory system that lets AI agents model their user's competence (see <a href="#research">Research</a>).</p>
+            <div class="tags"><span>LLM agents</span><span>Knowledge tracing</span>| <span>python</span></div>
+        </div>
+    </section>
+
     <section id="projets">
-        <h2>Personal Projects</h2>
+        <h2>Projects</h2>
         <div class="grid">
             <div class="project-card">
-                <h3>VeloxQuiz &nbsp;&nbsp; <span class="date"><i>December 2025 - Ongoing</i></span></h3>
+                <h3>Le Village: Reward Rules for Pluralistic Alignment &nbsp;&nbsp; <span class="date"><i>October 2026 - Ongoing</i></span></h3>
                 <p>
-                    VeloxQuiz is an automated assessment platform designed to reduce teacher workload by 
-                    streamlining quiz creation, evaluation, and overall academic management.
+                    A reinforcement learning study of whose preferences an AI agent ends up serving. A robot in a simulated village picks tasks that help or hurt four voting villagers
+                    and Nature, which never votes. I compare standard RLHF with explicit aggregation rules (mean, maximin, Nash, harm constraint) as the minority's share of the feedback varies.
                 </p>
                 <ul>
-                    <li>VeloxQuiz extracts data from PowerPoint files using <b>python-pptx</b>, anonymizes it with <b>Microsoft Presidio</b>, and generates quizzes using the <b>Google Gemini API</b>.</li>
-                    <li>Grades quizzes via an automated scoring system created with <b>OpenCV</b> image recognition for mobile camera-based response analysis.</li>
-                    <li>All integrated into a unified application built with <b>Flutter, FastAPI, and PostgreSQL</b>.</li>
+                    <li>Exact <b>KL-regularized soft value iteration</b>, <b>Bradley-Terry</b> reward models (single, EM mixture, per group) and welfare objectives solved through their dual with <b>L-BFGS</b>.</li>
+                    <li>Standard RLHF erases the minority when it gives 10% of the feedback or less; maximin and Nash protect it, and only the harm constraint limits damage to Nature.</li>
+                    <li>Interactive <b>Pygame</b> interface to compare the rules live.</li>
                 </ul>
 
-                <div class="tags"><span>OpenCV</span><span>Flutter</span><span>FastAPI</span><span>PostgreSQL</span>| <span>python</span> <span>dart</span></div>
-                <br>
-                <a href="https://github.com/MaxGauthier/QuizRecognition">See Code</a>
+                <div class="tags"><span>NumPy</span><span>SciPy</span><span>Pygame</span><span>pytest</span>| <span>python</span></div>
             </div>
-            <div class="project-card">
-                <h3>2048 ai bot &nbsp;&nbsp; <span class="date"><i>August 2025 - September 2025</i></span></h3>
-                <p>
-                    As an introduction to machine learning, I developed a reinforcement learning agent capable of playing the 2048 game autonomously with PyTorch.
-                </p>
-                <a href="https://play2048.co/">link to 2048 game</a>
-                <ul>
-                    <li>Learned about Markov Decision Processes (agents, env, states, actions, etc.) </li>
-                    <li>Learned about different learning mechanisms (Q-learning, policy gradients, etc.)</li>
-                    <li>Learned about exploration and exploitation, replay buffers, target Networks, etc.</li>
-                </ul>
-
-                <div class="tags"><span>PyTorch</span><span>Pygame</span>| <span>Python</span></div>
-                <br>
-                <a href="https://github.com/MaxGauthier/2048">See Code</a>
-            </div>
-            <!--<div class="project-card">
-                <h3>ElementBattle &nbsp;&nbsp; <span class="date"><i>August 2025 - September 2025</i></span></h3>
-                <p>
-                    ElementBattle is a 2D physics mini-simulation featuring natural elements clashing with unique powers.
-                </p>
-                <ul>
-                    <li>Physics-based object simulation (gravity, collisions, energy, motion, etc.) developed using <b>Pygame</b>.</li>
-                    <li>A project designed to master <b>Object-Oriented Programming (OOP)</b> principles and introduction to <b>computer graphics</b>.</li>
-                </ul>
-
-                <div class="tags"><span>Pygame</span>| <span>Python</span></div>
-                <br>
-                <a href="https://github.com/MaxGauthier/ElementBattle">See Code</a>
-                <a href="https://www.youtube.com/@element_battle">See Demo</a>
-            </div> -->
         </div>
     </section>
 
@@ -107,6 +133,16 @@
             <p><strong>Promutuel Insurance</strong> | May 2025 - August 2025</p>
             <p>Built modular Drupal components, using twig, php, javascript and secured web applications through Azure AD SSO and GCP integrations. Deployed containerized apps with Docker and Acquia while collaborating in Agile environments on Linux/WSL.</p>
             <div class="tags"><span>Drupal</span><span>GCP</span>| <span>javascript</span><span>html</span><span>css</span><span>php</span></div>
+        </div>
+    </section>
+
+    <section id="extracurricular">
+        <h2>Extracurricular</h2>
+        <div class="timeline-item">
+            <ul>
+                <li>I played elite-level baseball for 10+ years and still enjoy following the sport! I also love hockey (I'm Canadian after all).</li>
+                <li>I enjoy both creating and discovering digital art.</li>
+            </ul>
         </div>
     </section>
 

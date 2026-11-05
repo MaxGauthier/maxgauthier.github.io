@@ -20,7 +20,63 @@ body {
     padding: 40px 20px;
 }
 
-section { margin-bottom: 60px; }
+html { scroll-behavior: smooth; }
+
+section { margin-bottom: 60px; scroll-margin-top: 70px; }
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(245, 245, 245, 0.95);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(6px);
+}
+
+.nav-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-name {
+    font-weight: 700;
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover { color: var(--primary); }
+
+@media (max-width: 768px) {
+    .nav-name { display: none; }
+
+    .nav-inner { justify-content: center; }
+
+    section { scroll-margin-top: 100px; }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 16px;
+    }
+}
 
 h1 { font-size: 2.5rem; color: #0f172a; margin-bottom: 10px; }
 h2 { font-size: 1.5rem; border-left: 4px solid var(--primary); padding-left: 15px; margin-bottom: 30px; }
